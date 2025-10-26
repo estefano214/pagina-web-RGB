@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif; 
+    font-size: 13px; 
+    background-color: #000000; 
+    color: #2df3f0; 
+    margin: 20px; 
+    line-height: 1.6; 
+}
+
+/* ======= TITULO PRINCIPAL ======= */
+h1 {
+    color: #ff00b3; 
+    font-size: 24px; 
+    font-family: Georgia, serif; 
+    text-align: center; 
+    text-transform: uppercase; 
+    margin-bottom: 20px; 
+    transition: color 0.3s ease;
+}
+
+h1:hover {
+    animation: tresColores 5s infinite alternate ease-in-out;
+}
+
+/* ======= SUBTITULO ======= */
+h2 {
+    color: #b107ff; 
+    margin-top: 20px;
+    border-left: 4px solid #00a02500; 
+    padding-left: 8px;
+    transition: color 0.3s ease;
+}
+
+h2:hover {
+    animation: tresColores 5s infinite alternate ease-in-out;
+}
+
+/* ======= PÁRRAFOS ======= */
+p {
+    margin-bottom: 15px; 
+    transition: color 0.3s ease;
+}
+
+p:hover {
+    animation: tresColores 5s infinite alternate ease-in-out;
+}
+
+/* ======= LISTAS ======= */
+ul {
+    list-style-type: square; 
+    background: #675b9b; 
+    padding: 15px;
+    border-radius: 8px; 
+    transition: background 0.3s ease;
+}
+
+ul:hover {
+    animation: cambioFondo 8s infinite alternate ease-in-out;
+}
+
+li {
+    margin: 6px 0;
+    transition: color 0.3s ease;
+}
+
+li:hover {
+    animation: tresColores 5s infinite alternate ease-in-out;
+}
+
+/* ======= ANIMACIONES ======= */
+@keyframes tresColores {
+    0%   { color: #ff00b3; }  /* Rosa fuerte */
+    33%  { color: #00ffe5; }  /* Celeste neón */
+    66%  { color: #ffcc00; }  /* Amarillo */
+    100% { color: #ff00b3; }  /* Vuelve a rosa */
+}
+
+@keyframes cambioFondo {
+    0%   { background: #675b9b; }
+    33%  { background: #3b2f63; }
+    66%  { background: #222; }
+    100% { background: #675b9b; }
+}
